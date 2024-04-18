@@ -1,4 +1,3 @@
-```java
 /*
 
 ## 1. Fill the array with random numbers
@@ -54,4 +53,4 @@ public class Main {
 
   }
 }
-```
+

@@ -75,3 +75,45 @@ public class Main {
         }
     }
 }
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+     
+  /*
+  4. Fill the party list with people you would like to invite to the party.
+  Check whether or not "Anna" is in the array.
+  Check whether or not "Maris" is in the array.
+  ["Oskars", "Anna", "Andris"]
+  Result: 
+  "Anna is in the party list"
+  "Maris is not in the party list"
+      */  
+      
+      String [] guestList = {"Oskars", "Anna", "Andris"};
+     
+      System.out.println("Guest list check: ");
+      
+      Scanner scanner = new Scanner(System.in);
+      String checkGuest = scanner.nextLine();
+      
+      boolean isInPartyList = false;
+      
+      for (int i = 0; i < guestList.length; i++) {
+          if (guestList[i].equals(checkGuest)) {
+              isInPartyList = true;
+              break;
+          }
+      }
+
+      if(isInPartyList == true){
+        System.out.println(checkGuest + " is in the party list");
+        }else{
+        System.out.println(checkGuest + " is not in the party list");
+        }
+
+       scanner.close();
+    }
+}

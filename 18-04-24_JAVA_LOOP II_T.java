@@ -1,14 +1,14 @@
 ```java
 /*
 
-1. Fill the array with random numbers
-DONE
+## 1. Fill the array with random numbers
+#DONE
 
-2. Find the sum of all elements in the array.
+#3 2. Find the sum of all elements in the array.
 For example in an array like this:
 [2, 3, 5, 1]
 Result: 11 (2 + 3 + 5 + 1)
-DONE
+#DONE
 
   */
 
@@ -33,7 +33,7 @@ public class Main {
 
 /*
 
-3. Find all the elements in the array that is below 0
+## 3. Find all the elements in the array that is below 0
 [-2, 3, -5, 1]
 Result:
 -2

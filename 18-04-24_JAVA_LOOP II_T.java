@@ -1,13 +1,10 @@
 /*
 
 ## 1. Fill the array with random numbers
-#DONE
-
 ## 2. Find the sum of all elements in the array.
 For example in an array like this:
 [2, 3, 5, 1]
 Result: 11 (2 + 3 + 5 + 1)
-# DONE
 
   */
 
@@ -27,16 +24,14 @@ public class Main {
 
 
 
-//import java.util.Scanner;
-
-
 /*
-
 ## 3. Find all the elements in the array that is below 0
 [-2, 3, -5, 1]
 Result:
 -2
 -5
+
+VER 1
 
   */
 
@@ -54,3 +49,34 @@ public class Main {
   }
 }
 
+
+/*
+VER 2
+
+  */
+ 
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {-2, 3, -5, 1};
+
+        boolean hasNegative = false;
+
+        for (int num : numbers) { //The line for (int num : numbers) is an example of an enhanced for loop, also known as a for-each loop, in Java. It is used to iterate over elements in an array or a collection, providing a more concise and readable way to traverse through the elements.
+            if (num < 0) {
+                hasNegative = true;
+                break;
+            }
+        }
+
+        if (hasNegative) {
+            System.out.println("Negative elements in the array:");
+            for (int num : numbers) {
+                if (num < 0) {
+                    System.out.println(num);
+                }
+            }
+        } else {
+            System.out.println("No negative elements");
+        }
+    }
+}

@@ -1,7 +1,4 @@
-public class Main {
-  public static void main(String[] args) {
-
-   /*
+ /*
 ## 1. Fill the array with random numbers
 ## 2. Find the sum of all elements in the array.
 For example in an array like this:
@@ -9,6 +6,8 @@ For example in an array like this:
 Result: 11 (2 + 3 + 5 + 1)
   */
    
+public class Main {
+  public static void main(String[] args) {
     int[] numbers = {1, 3, -4, 2, 5, 8};
 
     int sum = 0;
@@ -21,19 +20,18 @@ Result: 11 (2 + 3 + 5 + 1)
 }
 
 
-public class Main {
-  public static void main(String[] args) {
-
-   /*
+/*
 ## 3. Find all the elements in the array that is below 0
 [-2, 3, -5, 1]
 Result:
 -2
 -5
 
-VER 1
+VERSION 1
   */
    
+public class Main {
+  public static void main(String[] args) {
     int[] numbers = {-2, 3, -5, 1};
 
     for (int i = 0; i < numbers.length; i++){
@@ -47,7 +45,8 @@ VER 1
 
 
 /*
-VER 2
+## 3
+VERSION 2
   */
  
 public class Main {
@@ -77,12 +76,7 @@ public class Main {
 }
 
 
-
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-     
-  /*
+ /*
   4. Fill the party list with people you would like to invite to the party.
   Check whether or not "Anna" is in the array.
   Check whether or not "Maris" is in the array.
@@ -92,6 +86,10 @@ public class Main {
   "Maris is not in the party list"
       */  
       
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    
       String [] guestList = {"Oskars", "Anna", "Andris"};
      
       System.out.println("Guest list check: ");
@@ -102,7 +100,7 @@ public class Main {
       boolean isInPartyList = false;
       
       for (int i = 0; i < guestList.length; i++) {
-          if (guestList[i].equals(checkGuest)) {
+          if (guestList[i].equals(checkGuest)) { // when comparing strings: use == to check if they're exactly the same object in memory, and use .equals() to check if they have the same content.
               isInPartyList = true;
               break;
           }

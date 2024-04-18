@@ -4,11 +4,11 @@
 ## 1. Fill the array with random numbers
 #DONE
 
-#3 2. Find the sum of all elements in the array.
+## 2. Find the sum of all elements in the array.
 For example in an array like this:
 [2, 3, 5, 1]
 Result: 11 (2 + 3 + 5 + 1)
-#DONE
+# DONE
 
   */
 
